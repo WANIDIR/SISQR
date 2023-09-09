@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    background-color: #f4dbc2;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', sans-serif;
+}
+/* ajuste franja superior logo - casa */
+header {
+    background-color: #f9cb9c;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+}
+/* ajuste logo esquina superior izqu sisqr */
+header .logo{
+    width: 90px;
+    height: 50px;
+    padding: 15px;
+}
+/* ajuste logo esquina superior derecha casa */
+header .nav{
+    width: 50px;
+    height: 50px;
+    padding: 15px;
+}
+/* ajuste logo central sisqr */
+.form-login .logo-inicio{
+  width: 250px;
+  height: 120px;
+  padding: 60px 40px; 
+}
+/* ajuste texto inicio sesión */
+.form-title{
+  text-transform: uppercase;
+  padding: 50px 70px;
+}
+/* ajuste al centro  */
+.form-login{
+    top: 50%;
+    left: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+/* ajuste de espaciado*/
+.form-login h1{
+    padding-bottom: 30px;
+    padding-top: 40px;
+}
+/* personalización usua - contra - ingresar */
+.form-login input[type="text"],
+.form-login input[type="password"],
+.form-login button[type="submit"]{
+    margin: 20px auto;
+    padding: 10px 12px;
+    border: 1px solid #080300;
+    border-radius: 10px;
+    transition: 0.25s;
+}
+/*efecto del passw - usuario*/
+.form-login input[type="password"]:focus,input[type="text"]:focus{
+    background: #e7d4c8; 
+    color:#ab2b17;
+}
+/*efecto del passw - usuario*/
+/* verificar opción
+.form-login input[type="password"]:focus, input[type="text"]:focus{
+    background: #c8e7e4; 
+    color:#ab2b17;
+}
+/* ajuste icono y puntero del logo de eye */
+#contra{
+  width: 12px;
+  cursor: pointer;
+}
+/* Espaciado interno usua -contrase */
+.container-inputPwd, .container-inputUser{
+    justify-content: space-between;
+}
+/*efecto del ingresar*/
+.form-login button[type="submit"]:hover{ 
+    cursor: pointer;
+    background-color: #E98C49;
+    border: 2px solid #080300;
+}
+/*deshabilito línea*/
+.recordar_pwd, .no_cuenta{
+  text-decoration: none;
+}
+/*margen del pie de página*/
+#copy{
+    padding: 80px;
+}
+/*configuro superposición, ubicación del wasap*/
+.whatsapp {
+    left:10px;
+    border-radius:50px;
+    position:fixed;
+    background-color:#25d366;
+    color:#FFF;
+    width:50px;
+    height:50px;
+    bottom:40px;
+    padding: 2px;
+    transition: ease 0.3s; 
+    text-align:center;
+    font-size:250%;
+    z-index:999;
+  }
+/*efecto del boton completo*/
+  .whatsapp:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+  /*tamaño del icono*/
+  .whatsapp-icon {
+    padding-top:5px;
+    transition: ease 1s;
+  }  
