@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SISQR</title>
+    <script src="/js/index.js" type="text/JavaScript"></script><!-- LLamar archivo JavaScript pendiente trabajar -->
+    <link rel="stylesheet" href="/css/index.css" type="text/css"><!-- llamar archivo css -->
+    <link rel="icon" href="/src/Logo.jpeg" rel="noopener noreferrer"><!-- Llama e Incluye el logo en la pestaña con el título-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"><!-- Enlace ícono wasap -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet"><!-- icono ver contraseña -->
+</head>
+<body>
+    <header class="container-header"><!-- Encabezado con logo e icono de inicio -->
+        <a href="index.html" rel="noopener noreferrer"><img src="/src/Logo_2.png" class="logo" alt="Imagen logo SISQR"></a><!-- Logo SISQR -->
+        <a href="index.html" rel="noopener noreferrer"><img src="/src/casa.png" class="nav" alt="Imagen casa inicio"></a><!-- Ícono de inicio -->
+    </header>
+    <main>
+      <form class="form-login"><!-- Formulario del inicio de sesión -->
+        <img src="/src/Logo_2.png" class="logo-inicio"><!-- Logo APP -->
+        <h1 class="form-title">Inicio Sesión</h1><!-- Título de inicio de sesión -->
+        <div class="container-inputUser"><!-- Entrada de usuario -->
+          <label for="user">Usuario</label>
+          <input name="user" type="text" style="border: solid 1px black;" placeholder="Ingrese Usuario" required><!-- Ingresa el usuario -->
+        </div><!-- Fin Entrada de usuario -->
+        <div class="container-inputPwd"><!-- Entrada de contraseña -->
+          <label for="pwd">Contraseña</label>
+          <input name="pwd" type="password" id="pwd" placeholder="Ingrese contraseña" value="Secreto" required><!-- Ingresa la contraseña -->
+          <span id="contra" class="fa fa-fw fa-eye field-icon" onclick="MostrarContrasena()"></span><!-- Mostrar contraseña -->
+        </div><!-- Fin Entrada de contraseña -->
+        <label><a href="#" class="recuperar_pwd" target="_blank" rel="noopener noreferrer">¿Ha olvidado su contraseña?</a></label><!-- Enlace de recuperar contraseña -->
+        <br><!-- Espacio -->
+        <label for = "recordar_user"><input id="recordar_user" type="checkbox" value="recordar_user" name="recordar_user" checked> Recordar Usuario</label><!-- Selector de recordar usuario -->
+        <button type="submit">INGRESAR</button><!-- Botón ingresar al sistema -->
+        <label>¿No tienes cuenta?<a href="#" class="no_cuenta" target="_blank" rel="noopener noreferrer">  Registrate</a></label><!-- Enlace de registrar nuevo usuario -->
+      </form><!-- Fin Formulario del inicio de sesión -->
+      <a href="https://wa.me/987654321?text=Contáctanos%20ahora" class="whatsapp" target="_blank"> <i class="fa fa-whatsapp whatsapp-icon"></i></a>
+    </main><!-- Fin main -->
+    <footer><!-- Pendiente elaborar si es necesario -->
+      <div id="copy">
+        <label for="copy"><small>Con derechos de autor Grupo No. 10  ADSO    ficha: 2675524</small></label>
+      </div>
+    </footer>
+</body>
+</html>
